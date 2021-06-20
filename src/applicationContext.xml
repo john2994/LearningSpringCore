@@ -16,7 +16,8 @@
 	<bean id="myCoach" class="com.spring.demo.TrackCoach">
 		<constructor-arg ref="MyFortuneService" />
 	</bean>
-	<bean id="FootballCoach" class="com.spring.demo.FootballCoach">
+	<bean id="FootballCoach" class="com.spring.demo.FootballCoach"
+		scope="singleton">
 		<property name="fortuneService" ref="MyFortuneService"></property>
 	</bean>
 	<bean id="CricketCoach" class="com.spring.demo.CricketCoach">
